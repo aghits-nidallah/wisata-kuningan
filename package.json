@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "css-minify": "^2.0.0",
+    "tailwindcss": "^2.2.15"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i src/tailwind.css -o public/css/app.css --watch --jit",
+    "prod": "tailwindcss -i src/tailwind.css -o public/css/app.css",
+    "minify": "css-minify -f public/css/app.css -o public/css"
+  }
+}
